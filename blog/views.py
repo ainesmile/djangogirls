@@ -7,7 +7,6 @@ from .forms import PostForm
 def save_post(request, form):
     post = form.save(commit=False)
     post.author = request.user
-    post.published_date = timezone.now()
     post.save()
 
 def post_list(request):
