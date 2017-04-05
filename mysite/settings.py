@@ -26,7 +26,9 @@ SECRET_KEY = '7*dz8l(@-di^f&29xas*u0p5(4p!(+e8)0)**x=66mu5l(&=nk'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'ainesmile.pythonanywhere.com'
+    'localhost',
+    '127.0.0.1',
+    'ainesmile.pythonanywhere.com',
 ]
 
 
