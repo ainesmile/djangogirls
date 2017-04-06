@@ -45,3 +45,9 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {
         'form': form
     })
+
+def post_draft_list(request):
+    drafts = Post.objects.filter(published_date__isnull=True)
+    return render(request, 'blog/post_draft_list.html', {
+        'drafts': drafts
+    })
